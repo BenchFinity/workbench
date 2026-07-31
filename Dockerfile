@@ -22,7 +22,7 @@ RUN npm run build
 # manager, daily-rebuilt with near-zero CVEs. See docs/adr/0001-distroless-base-images.md.
 # Digest-pinned for reproducibility; refresh via Dependabot/Renovate or manually
 # (docker buildx imagetools inspect cgr.dev/chainguard/nginx:latest).
-FROM cgr.dev/chainguard/nginx:latest@sha256:71093c1127c31422838904b00b32287bd2bf58cd06e0abc3c85d96597d46a448
+FROM cgr.dev/chainguard/nginx:latest@sha256:e4ff957080737c90a9ecfeaa40e3d19ea9d687e9cacda2f2a031c75ffcdd72b7
 
 # Chainguard nginx mirrors the stock layout: nginx.conf includes
 # /etc/nginx/conf.d/*.conf, listens on 8080, and serves /usr/share/nginx/html.
